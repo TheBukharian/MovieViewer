@@ -15,7 +15,6 @@
             android:name="com.example.movieviewerr.ui.view.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:screenOrientation="fullSensor"
             android:theme="@style/Theme.MovieViewerr.NoActionBar">
 
             <intent-filter>
