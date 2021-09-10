@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="7dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/movieImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/movieName"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#B5000000"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lines="2"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    android:text="The Movie"
+                    android:textColor="@color/white"
+                    android:textSize="27sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/movieDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="35dp"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:text="Skokowdokwodkowkdowkdowkdowdk"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/devider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#2DE4E4E4"
+            android:layout_below="@id/movieDescription"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
